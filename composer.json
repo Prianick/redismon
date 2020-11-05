@@ -1,0 +1,35 @@
+{
+  "name": "dr/redismon",
+  "authors": [
+    {
+      "name": "dr",
+      "email": "dr.profee@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "predis/predis": "^1.1",
+    "laravel/framework": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "orchestra/testbench": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dr\\Redismon\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dr\\Redismon\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dr\\Redismon\\Providers\\RedismonServiceProvider"
+      ]
+    }
+  }
+}
